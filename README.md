@@ -40,6 +40,60 @@ gitbasics $git branch
 
 
 
+# Push vs Merge vs Rebase
+Comparison of **`git push`**, **`git merge`**, and **`git rebase`**, highlighting their purposes, effects, and when to use each:
+
+---
+
+### 🔹 `git push`
+
+- **Purpose**: Uploads your local commits to a remote repository.
+- **Scope**: Remote (e.g., GitHub, GitLab).
+- **Effect**: Makes your local changes available to others.
+- **Example**:
+  ```bash
+  git push origin main
+  ```
+
+---
+
+### 🔹 `git merge`
+
+- **Purpose**: Combines changes from one branch into another.
+- **Scope**: Local.
+- **Effect**: Creates a **merge commit** that joins histories of both branches.
+- **Example**:
+  ```bash
+  git checkout main
+  git merge feature-branch
+  ```
+
+---
+
+### 🔹 `git rebase`
+
+- **Purpose**: Reapplies commits from one branch onto another base.
+- **Scope**: Local.
+- **Effect**: Rewrites commit history to create a linear progression.
+- **Example**:
+  ```bash
+  git checkout feature-branch
+  git rebase main
+  ```
+
+---
+
+### 🆚 Summary Comparison
+
+| Command      | Scope     | Purpose                          | History Impact         | Creates Merge Commit? | Use Case                          |
+|--------------|-----------|----------------------------------|-------------------------|------------------------|-----------------------------------|
+| `push`       | Remote    | Share local commits              | No change               | No                     | Upload changes to remote repo     |
+| `merge`      | Local     | Combine branches                 | Preserves full history  | Yes                    | Collaborative development         |
+| `rebase`     | Local     | Reapply commits on new base      | Rewrites history        | No                     | Clean up history before merging   |
+
+---
+
+
 # Merge your commits to Remote Repository
 ---
 
