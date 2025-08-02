@@ -1,3 +1,4 @@
+# My Tables Printing
 # Tables Printing
 for i in range(2, 21):  # Tables from 2 to 20
     print(f"\nMultiplication Table for {i}")
