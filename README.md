@@ -40,9 +40,7 @@ gitbasics $git branch
 
 
 
-
-To **merge your commits to a remote repository**, you typically follow this process:
-
+# Merge your commits to Remote Repository
 ---
 
 ### ✅ Step-by-Step Process
