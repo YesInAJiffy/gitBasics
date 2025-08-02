@@ -350,4 +350,35 @@ Merging combines changes from one branch into another, preserving full history.
 
 ---
 
+In **SourceTree**, a Git GUI client, the merge options you mentioned control how merges are handled when integrating changes from one branch into another. Here's what each option means:
+<img width="596" height="282" alt="image" src="https://github.com/user-attachments/assets/0653a635-7356-4e24-a9d3-843230dbd5fd" />
+
+---
+
+### 1. **Commit Merged Changes Immediately**
+- **Meaning**: Automatically creates a merge commit right after the merge is performed.
+- **Use Case**: Useful when you want to finalize the merge without reviewing or modifying the merge commit manually.
+
+---
+
+### 2. **Include Messages from Commits Being Merged in Merge Commit**
+- **Meaning**: The merge commit message will include the commit messages from the branch being merged.
+- **Use Case**: Helps preserve context and history in the merge commit, especially useful for tracking what changes were introduced.
+
+---
+
+### 3. **Create New Commit Even If Fast-Forward Merge**
+- **Meaning**: Forces a merge commit even when a fast-forward is possible.
+- **Fast-forward**: Happens when the target branch has no new commits since the source branch diverged, so Git can just move the pointer forward.
+- **Use Case**: Maintains a clear history of merges, which can be useful for audit trails or understanding when branches were integrated.
+
+---
+
+### 4. **Rebase Instead of Merge**
+- **Meaning**: Rewrites the commit history by placing your changes on top of the target branch, rather than creating a merge commit.
+- **Use Case**: Keeps history linear and clean, but can be risky if used on shared branches due to rewriting history.
+
+---
+
+\
 
