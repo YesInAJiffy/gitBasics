@@ -5,3 +5,4 @@ for i in range(2, 21):  # Tables from 2 to 20
     for j in range(1, 11):  # Each table from 1 to 10
         print(f"{i} x {j} = {i * j}")
 # Added this on 7th August at 12:29 PM
+# Added this in DEVELOP on 7th Aug at 1:21 PM
